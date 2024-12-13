@@ -1,0 +1,46 @@
+{
+  "rules": {
+	"comma-dangle": [1, "always-multiline"],
+	"no-underscore-dangle": [0],
+	"max-len": ["off"],
+	"arrow-body-style": [0],
+	"react/jsx-no-bind": [0],
+	"import/no-unresolved": [0],
+	"import/no-named-as-default-member": [0],
+	"indent": ["off", "tab"],
+	"react/jsx-indent": ["off", "tab"],
+	"keyword-spacing": ["error", {
+		"overrides": {
+			"if": { "after": false },
+			"for": { "after": false },
+			"while": { "after": false },
+			"switch": { "after": false }
+		}
+	}],
+	"space-before-function-paren": ["error", "never"],
+	"prefer-arrow-callback": ["warn"],
+	"consistent-return": ["off"],
+	"no-shadow": ["off"],
+	"quote-props": ["off"],
+	"no-param-reassign": ["warn"],
+	"no-unused-expressions": ["error", { "allowShortCircuit": true, "allowTernary": true }],
+	"no-unused-vars": ["warn", { "args": "none" }],
+	"no-use-before-define": ["error", { "functions": false }],
+	"no-nested-ternary": ["warn"],
+	"react/jsx-indent-props": ["off", "tab"],
+	"newline-per-chained-call": ["off"],
+	"arrow-parens": ["error", "as-needed"],
+	"react/destructuring-assignment": ["off"],
+	"object-curly-newline": ["off"],
+	"react/jsx-filename-extension": ["off"],
+	"react/jsx-fragments": ["off"],
+	"react/jsx-wrap-multilines": ["off"],
+	"import/no-named-as-default": ["warn"],
+	"react/forbid-prop-types": ["warn"],
+	"react/jsx-one-expression-per-line": ["off"],
+	"react/no-access-state-in-setstate": ["warn"],
+	"class-methods-use-this": ["off"],
+	"import/prefer-default-export": ["off"],
+	"import/no-cycle": ["off"]
+  }
+}
