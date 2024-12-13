@@ -1,0 +1,27 @@
+{
+  "name": "monlivresms-desktop",
+  "version": "0.0.1",
+  "description": "MonLivreSMS: IOS messages collector",
+  "license": "",
+  "author": {
+    "name": "MonLivreSMS",
+    "email": "contact@monlivresms.com",
+    "url": "https://monlivresms.com"
+  },
+  "contributors": [
+    {
+      "name": "OFF AXIS",
+      "email": "contact@offaxis.io",
+      "url": "https://offaxis.io"
+    }
+  ],
+  "main": "./dist/main/main.js",
+  "scripts": {
+    "rebuild": "node -r ts-node/register ../../.erb/scripts/electron-rebuild.js",
+    "postinstall": "npm run rebuild && npm run link-modules",
+    "link-modules": "node -r ts-node/register ../../.erb/scripts/link-modules.ts"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.6"
+  }
+}
